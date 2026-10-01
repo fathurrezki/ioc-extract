@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+# teks asli dari tiket/klien untuk diuji lokal - JANGAN pernah ikut commit
+inbox/

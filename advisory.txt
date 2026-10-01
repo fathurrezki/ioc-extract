@@ -1,0 +1,31 @@
+ADVISORY SINTETIS - HANYA UNTUK UJI ioc-extract
+Semua domain memakai TLD cadangan RFC 2606 (.example, .test), semua IP publik
+memakai rentang dokumentasi RFC 5737, dan hash dihitung dari teks sampel -
+bukan malware sungguhan. Tidak ada data klien di berkas ini.
+
+Ringkasan
+Kampanye phishing "Tagihan Palsu" menyasar staf keuangan sejak 22 Sep 2026.
+Korban menerima email dari billing[at]secure-login[.]example yang berisi
+tautan hxxps://secure-login[.]example/verify?id=7&ref=mail (lihat lampiran).
+
+Setelah login, korban diarahkan mengunduh invoice_update.exe dari
+hxxp://203.0.113[.]45:8080/gate.php. Loader lalu menghubungi server C2
+cdn-update[.]test dan 198.51.100.23 lewat port 443.
+
+Host korban yang terkonfirmasi: 10.20.30.40 (WS-FIN-07).
+
+Indikator berkas
+  invoice_update.exe  SHA256 832ca94a2240429b6bcd6be9413b2fa1ac3d12c9dc79c9bc219f96a82b054497
+                      MD5    abdc2a6a13ad73bcf3b40f32df469e02
+  loader.dll          SHA1   9adf2ce75e3d6d3fa0d64edf123789fcda7cdaf5
+  Duplikat dari tim lain: 832CA94A2240429B6BCD6BE9413B2FA1AC3D12C9DC79C9BC219F96A82B054497
+
+Kerentanan yang dieksploitasi: CVE-2024-3400 dan CVE–2023–4966 (en dash dari PDF).
+
+Catatan lingkungan (BUKAN indikator)
+- Diuji di Chrome 120.0.0.1 dan agen EDR versi 7.2.0.15.
+- Subnet mask jaringan uji 255.255.255.0, loopback 127.0.0.1.
+- Berkas pendukung: README.md, run.ps1, setup.py.
+- Log sandbox mencatat session_id=a4473db170a0e8f25472b15425b1179141a36684465af93ccfb31d6536a3a0a9
+- Format pelaporan: https://example.com/lapor atau pelapor@example.com.
+- Berkas kosong ikut terunggah: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855

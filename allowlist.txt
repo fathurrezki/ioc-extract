@@ -1,0 +1,30 @@
+# Allowlist bawaan ioc-extract.
+#
+# Isinya SENGAJA sedikit. Hanya nilai yang tidak mungkin menjadi infrastruktur
+# penyerang. Domain populer seperti google.com atau microsoft.com TIDAK
+# dimasukkan, karena layanan sah (Google Sites, OneDrive, SharePoint) sering
+# dipakai untuk menampung halaman phishing.
+#
+# Tambahkan domain/IP milik organisasi sendiri di berkas terpisah, lalu pakai
+# --allowlist nama-berkas.txt. Format per baris:
+#   perusahaan.co.id     domain beserta semua subdomainnya
+#   10.20.0.0/16         IP tunggal atau rentang CIDR
+#   <hash> / CVE-...     nilai persis
+
+# Domain contoh dokumentasi (RFC 2606): muncul di panduan dan templat
+example.com
+example.net
+example.org
+
+# Namespace XML/skema: muncul di dokumen Office, SVG, SOAP; bukan server
+w3.org
+schemas.microsoft.com
+schemas.openxmlformats.org
+schemas.xmlsoap.org
+purl.org
+ns.adobe.com
+
+# Hash berkas kosong (0 byte): sering muncul di laporan sandbox dan tidak berarti apa-apa
+d41d8cd98f00b204e9800998ecf8427e                                  # MD5
+da39a3ee5e6b4b0d3255bfef95601890afd80709                          # SHA-1
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  # SHA-256

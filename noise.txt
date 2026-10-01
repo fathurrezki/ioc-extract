@@ -1,0 +1,48 @@
+SAMPEL KEBISINGAN - setiap baris di bawah TAMPAK seperti IOC tetapi BUKAN.
+Keluaran ioc-extract untuk berkas ini WAJIB kosong (kode keluar 1).
+Kalau ada aturan baru yang membuat berkas ini menghasilkan temuan, aturan itu
+terlalu galak dan harus diperbaiki sebelum dipakai.
+
+== Catatan rilis ==
+Agen EDR build 7.11.0.18 menggantikan versi 7.10.2.3.
+Firmware v2.4.1.9 untuk switch lantai 3; lihat Bagian 2.1.3.4 pada manual.
+Diuji pada Chrome 120.0.0.1, Firefox/115.0.0.2, Windows 10.0.19045.
+
+== Keluaran ipconfig / netstat ==
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Loopback  . . . . . . . . . . . . : 127.0.0.1
+   listening on 0.0.0.0 port 5353, multicast 224.0.0.251
+   SNMP OID 1.3.6.1.4.1.311.21.7
+
+== Potongan kode dari tiket ==
+$client = New-Object System.Net.WebClient
+[System.IO.File]::WriteAllText($path, $data)
+using System.IO;
+self.name = request.args.get("name")
+window.open(url); document.cookie = token
+os.path.join(base, "config.json")
+print(user.info())
+
+== Nama berkas ==
+setup.exe, kernel32.dll, README.md, setup.py, deploy.sh, Terminal.app,
+laporan_final.pdf, backup.tar.gz, config.yaml, run.ps1
+
+== Header HTTP & log aplikasi ==
+X-Request-ID: 28a35ee48328602fb1958c70bb70863dcd667a638e06ed409bbc551a120bcf15
+Cookie: PHPSESSID=475e8b188d275b7eb2665fc4d5a34cf6
+"sessionToken": "a4473db170a0e8f25472b15425b1179141a36684465af93ccfb31d6536a3a0a9"
+trace_id=31d272de2cecc29424a4c3c70ad7f2a1
+
+== Riwayat git ==
+commit ce4786eacb1a35570745fbb51a9d6fd9d36065a9
+Merge: commit d72c7079ecd028833c9b322ff105419072f7813d
+
+== Angka panjang ==
+Nomor resi uji 12345678901234567890123456789012 (32 angka, bukan MD5)
+UUID 550e8400-e29b-41d4-a716-446655440000
+Hash berkas kosong: d41d8cd98f00b204e9800998ecf8427e
+
+== Dokumentasi ==
+Kirim laporan ke pelapor@example.com atau buka https://www.example.org/panduan.
+Namespace: xmlns="http://www.w3.org/2000/svg" dan http://schemas.microsoft.com/office/2006/xmlns
+CVE-1899-0001 hanya contoh salah ketik tahun.
